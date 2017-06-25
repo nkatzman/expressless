@@ -1,6 +1,6 @@
 {
   "name": "expressless",
-  "version": "0.0.12",
+  "version": "0.0.11",
   "description": "Easily integrate and turn your express server, serverless",
   "scripts": {
     "pretest": "eslint .",
@@ -8,6 +8,7 @@
     "start": "node index.js",
     "supervise": "supervisor -i features/ index.js"
   },
+  "main": "lib/index.js",
   "author": "Noah Katzman",
   "contributors": [
     "Noah Katzman <nbkatzman@gmail.com>"

@@ -3,7 +3,7 @@ process.env.NODE_ENV = 'production';
 process.env.NODE_APP_INSTANCE = 'devices';
 const routeId = 'list';
 const schemaId = 'fdaDevices';
-const schema = require('./fdaDevices');
+const schema = require('./foo');
 const expressless = require('../lib');
 
 const defaultHandlers = {
