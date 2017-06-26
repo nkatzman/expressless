@@ -1,6 +1,6 @@
 {
   "name": "expressless",
-  "version": "0.0.11",
+  "version": "0.0.17",
   "description": "Easily integrate and turn your express server, serverless",
   "scripts": {
     "pretest": "eslint .",
@@ -13,6 +13,10 @@
   "contributors": [
     "Noah Katzman <nbkatzman@gmail.com>"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nkatzman/expressless.git"
+  },
   "keywords": [
     "express",
     "serverless",
@@ -23,14 +27,17 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "joi": "^10.0.4",
     "chai": "^3.5.0",
     "clone": "^2.0.0",
     "eslint": "^3.4.0",
     "eslint-config-airbnb-base": "^7.0.0",
     "eslint-plugin-import": "^1.14.0"
   },
+  "peerDependencies": {
+    "joi": "^10.0.4"
+  },
   "dependencies": {
-    "joi": "^10.0.4",
     "node-http-error": "^1.0.0",
     "winston": "^2.2.0"
   }
