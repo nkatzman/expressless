@@ -7,7 +7,7 @@ const schema = require('./foo');
 const expressless = require('../lib');
 
 const defaultHandlers = {
-    get: function(routeInfo, req, res, next) {
+    get(routeInfo, req, res, next) {
         console.log('!!!!!!!!!!!!!!!!!!!!!!');
         res.json({
             foo: 'This is an override baby'
@@ -15,8 +15,8 @@ const defaultHandlers = {
 
         next();
     }
-}
+};
 
 // console.log(expressless);
 
-exports.devices = expressless.serveSchema({ schema, schemaId, routeId , defaultHandlers });
+exports.devices = expressless.serveSchema({ schema, schemaId, routeId, defaultHandlers });

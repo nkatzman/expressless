@@ -4,7 +4,7 @@
   "description": "Easily integrate and turn your express server, serverless",
   "scripts": {
     "pretest": "eslint .",
-    "test": "echo \"test\"",
+    "test": "jenkins-mocha --recursive",
     "start": "node index.js",
     "supervise": "supervisor -i features/ index.js"
   },
@@ -27,12 +27,15 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "joi": "^10.0.4",
     "chai": "^3.5.0",
     "clone": "^2.0.0",
     "eslint": "^3.4.0",
     "eslint-config-airbnb-base": "^7.0.0",
-    "eslint-plugin-import": "^1.14.0"
+    "eslint-plugin-import": "^1.14.0",
+    "jenkins-mocha": "^4.1.2",
+    "joi": "^10.0.4",
+    "mockery": "^2.1.0",
+    "sinon": "^2.3.5"
   },
   "peerDependencies": {
     "joi": "^10.0.4"

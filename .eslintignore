@@ -1,4 +1,5 @@
 node_modules/
+artifacts/
+.nyc_output/
 features/*
-tests/*
 scripts/*

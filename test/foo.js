@@ -26,7 +26,7 @@ module.exports = {
                 method: 'put',
                 path: '/:id',
                 validation: Joi.object({
-                    isPublished: device.isPublished,
+                    isPublished: device.isPublished
                 })
             },
             get: '/:id'
